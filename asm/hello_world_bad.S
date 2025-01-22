@@ -83,13 +83,6 @@ reset:
  lda #RS             ; clear EN
  sta PORTA
 
- lda #","            ; send data ","
- sta PORTB
- lda #(EN | RS)      ; send data
- sta PORTA
- lda #RS             ; clear EN
- sta PORTA
-
  lda #" "            ; send data " "
  sta PORTB
  lda #(EN | RS)      ; send data
@@ -133,6 +126,286 @@ reset:
  sta PORTA
 
  lda #"!"            ; send data "!"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"!"            ; send data "!"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"!"            ; send data "!"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"-"            ; send data "-"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"K"            ; send data "K"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"a"            ; send data "a"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"i"            ; send data "i"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"v"            ; send data "v"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"a"            ; send data "a"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"l"            ; send data "l"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"y"            ; send data "y"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"a"            ; send data "a"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #" "            ; send data " "
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #":"            ; send data ":"
+ sta PORTB
+ lda #(EN | RS)      ; send data
+ sta PORTA
+ lda #RS             ; clear EN
+ sta PORTA
+
+ lda #"("            ; send data "("
  sta PORTB
  lda #(EN | RS)      ; send data
  sta PORTA

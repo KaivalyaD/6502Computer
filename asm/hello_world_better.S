@@ -28,7 +28,7 @@ reset:
  lda #RS             ; set display to write mode
  sta PORTA
 
-; print "Hello world!!!" to display
+; print "Hello world!!!\n-Kaivalya" to display
  ldx #0              ; reset X
 print_char: 
  lda message, X      ; load A with value at address (message + X)
@@ -41,7 +41,7 @@ done:
  jmp done
 
 message:
- .ascii "Hello world!!!",$00
+ .ascii "Hello world!!!                          -Kaivalya :)",$00
 
 lcd_instruction:
  sta PORTB
