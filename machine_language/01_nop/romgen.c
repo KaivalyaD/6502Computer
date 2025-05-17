@@ -14,10 +14,6 @@ const uint8_t ivt[] = { };
 const uint8_t padding_byte = 0xea;
 
 int main(void) {
-    size_t program_size = sizeof(program) / sizeof(program[0]);
-    size_t ivt_size = sizeof(ivt) / sizeof(ivt[0]);
-    size_t padding_size = ROMSIZE - (program_size + ivt_size);
-
     FILE* fptr = fopen("rom.bin", "wb");
     int error = 0;
 
@@ -33,9 +29,10 @@ int main(void) {
         }
     }
 
+    size_t program_size = sizeof(program) / sizeof(program[0]);
     /*
-     * Next, write the program onward location 0x0000
-     * which is mapped to 0x8000 as per our memory map.
+     * Next, write the program starting from location
+     * 0x0000 (mapped to 0x8000 as per our memory map).
      */
     fseek(fptr, 0x0000, SEEK_SET);
     for(int i = 0; i < program_size; i++) {
@@ -47,6 +44,7 @@ int main(void) {
         }
     }
 
+    size_t ivt_size = sizeof(ivt) / sizeof(ivt[0]);
     /*
      * Finally, write the interrupt vector table
      * starting at location 0x7FFA (mapped to 0xFFFA).
@@ -65,7 +63,7 @@ int main(void) {
 
     printf("Generated a directly usable binary from machine code for the 65C02S processor.\n");
     printf("  program size = %d bytes\n", program_size);
-    printf("  padding size = %d bytes\n", padding_size);
+    printf("  padding size = %d bytes\n", ROMSIZE - program_size - ivt_size);
     printf("  ivt size = %d bytes\n", ivt_size);
     printf("\n");
 
