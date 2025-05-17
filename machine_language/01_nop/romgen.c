@@ -19,7 +19,7 @@ int main(void) {
 
     printf("\n");
 
-    // First, fill the file with only padding bytes.
+    // First, fill the ROM with only padding bytes.
     for(int i = 0; i < ROMSIZE; i++) {
         error = fputc(padding_byte, fptr);
         if (error == EOF) {
